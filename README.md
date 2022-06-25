@@ -27,3 +27,15 @@
 ## Deliverables
 - A link to your game, which is deployed somewhere on the internet
 - A link to your GitHub repository, so we can see the progress on your game
+
+
+## Psuedocode
+1. Add a map from Leaflet
+2. Make sure it is zoomable
+3. Create character images
+4. Make characters images moveable w/ keystrokes
+5. Be able to add a character to your party
+6. Create pitfalls that cause you to lose a party member
+7. Get five people in your party, win the game
+8. Create a single-use passcode that generates when won
+9. Create a website that allows you to enter your single-use passcode and be memorialized as a winner for life!
