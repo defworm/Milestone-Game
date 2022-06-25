@@ -42,10 +42,48 @@
 
 ### User Story
 As a User, I want to: (Objective)
+1. Travel the map
+2. Find and collect members to add to my party
+3. Avoid pitfalls that will cause me to lose members of my party
+4. Collect five members and make it to the endpoint to win
 
 What I see:
+1. A traversable map
+2. A starter character that moves on command
+3. 1, 2, 3, 4, or 5 party members that move in unison
 
 How I navigate:
+1. Key up, down, left, right
+2. Mouse zoom on map
 
 
 ### Assets
+1. North facing character #1 
+2. South facing character #1
+3. East facing character #1
+4. West facing character #1
+5. Static character #1
+
+1. North facing character #2 
+2. South facing character #2
+3. East facing character #2
+4. West facing character #2
+5. Static character #2
+
+1. North facing character #3 
+2. South facing character #3
+3. East facing character #3
+4. West facing character #3
+5. Static character #3
+
+1. North facing character #4 
+2. South facing character #4
+3. East facing character #4
+4. West facing character #4
+5. Static character #4
+
+1. North facing character #5 
+2. South facing character #5
+3. East facing character #5
+4. West facing character #5
+5. Static character #5
