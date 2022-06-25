@@ -39,3 +39,13 @@
 7. Get five people in your party, win the game
 8. Create a single-use passcode that generates when won
 9. Create a website that allows you to enter your single-use passcode and be memorialized as a winner for life!
+
+### User Story
+As a User, I want to: (Objective)
+
+What I see:
+
+How I navigate:
+
+
+### Assets
