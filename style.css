@@ -1,1 +1,8 @@
-#map { height: 700px; }
+#map { 
+    height: 550px;
+    width: 1250px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+}
