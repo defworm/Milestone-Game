@@ -9,8 +9,12 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '© OpenStreetMap'
 }).addTo(map);
 
-// creating the main character
-const mc = mainCharacter(100, 110);
+// creating the main character and party members (from gifer.com)
+let mc = mainCharacter(100, 110);
+let c2= character2(100, 110);
+let c3 = character3(100, 110);
+let c4 = character4(100, 110);
+let c5 = charcter5 (100, 100);
 
 
 

@@ -15,16 +15,16 @@ function move(element) {
         element.style.bottom = y + 'px'
         
         function moveCharacter(){ 
-            if(direction === 'west'){
+            if(direction === 'left'){
                 x-=1
             }
-            if(direction === 'north'){
+            if(direction === 'up'){
                 y+=1
             }
-            if(direction === 'east'){
+            if(direction === 'right'){
                 x+=1
             }
-            if(direction === 'south'){
+            if(direction === 'down'){
                 y-=1
             }
             element.style.left = x + 'px'
@@ -37,16 +37,16 @@ function move(element) {
             if(e.repeat) return;
         
             if(e.key === 'ArrowLeft'){
-                direction = 'west'
+                direction = 'left'
             }
             if(e.key === 'ArrowUp'){
-                direction = 'north'
+                direction = 'up'
             }
             if(e.key === 'ArrowRight'){
-                direction = 'east'
+                direction = 'right'
             }
             if(e.key === 'ArrowDown'){
-                direction = 'south'
+                direction = 'down'
             }
             callback(direction)
         })

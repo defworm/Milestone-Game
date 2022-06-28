@@ -4,19 +4,19 @@ function mainCharacter(x, y) {
 
     function handleDirectionChange(direction) {
         if (direction === null) {
-            element.src = `assets/static.gif`
+            element.src = `assets/mainCharacter.gif`
         }
-        if (direction === 'west') {
-            element.src = `assets/west.gif`
+        if (direction === 'left') {
+            element.src = `assets/left.gif`
         }
-        if (direction === 'north') {
-            element.src = `assets/north.gif`
+        if (direction === 'up') {
+            element.src = `assets/up.gif`
         }
-        if (direction === 'east') {
-            element.src = `assets/east.gif`
+        if (direction === 'right') {
+            element.src = `assets/right.gif`
         }
-        if (direction === 'south') {
-            element.src = `assets/south.gif`
+        if (direction === 'down') {
+            element.src = `assets/down.gif`
         }
     }
 
