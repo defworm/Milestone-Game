@@ -30,8 +30,8 @@
 
 
 ## Psuedocode
-1. Add a map from Leaflet
-2. Make sure it is zoomable
+1. Add background to game
+2. Remove scrolling
 3. Create character images
 4. Make characters images moveable w/ keystrokes
 5. Be able to add a character to your party
@@ -43,7 +43,7 @@
 ### User Story
 As a User, I want to: (Objective)
 1. Travel the map
-2. Find and collect members to add to my party
+2. Find and collect members to add to my party. This is done by correctly answering the riddle.
 3. Avoid pitfalls that will cause me to lose members of my party
 4. Collect five members and make it to the endpoint to win
 
@@ -54,7 +54,7 @@ What I see:
 
 How I navigate:
 1. Key up, down, left, right
-2. Mouse zoom on map
+
 
 
 ### Assets
