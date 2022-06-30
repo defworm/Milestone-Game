@@ -6,3 +6,13 @@
     border-top-width: 0px;
     border-bottom-width: 0px;
 }
+
+/* disabling web scroll (codegrepper.com */
+html, body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+ .noscroll{
+    overflow: hidden;
+ }
