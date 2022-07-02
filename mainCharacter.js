@@ -60,6 +60,7 @@ function character2(x, y){
     }
 }
 
+// goofed my up and down in saved file, have to correct//
 function character3(x, y){
     const element = newImage('assets/character3.gif')
     element.style.zIndex = 1;

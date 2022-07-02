@@ -34,9 +34,18 @@
 2. Remove scrolling
 3. Create character images
 4. Make characters images moveable w/ keystrokes
-5. Be able to add a character to your party
-6. Create pitfalls that cause you to lose a party member
-7. Get five people in your party, win the game
+5. Be able to add a character to your party by: 
+   a) landing on berries 
+   b) clicking them
+   c) correctly answering a riddle 
+6. Create pitfalls that cause you to lose a party member by:
+   a) landing on berries
+   b) clicking them
+   c) incorrectly answering a riddle
+7. Win the game by:
+   a) landing on the last berry
+   b) while having five party members
+   c) correctly answering the last riddle
 8. Create a single-use passcode that generates when won
 9. Create a website that allows you to enter your single-use passcode and be memorialized as a winner for life!
 
