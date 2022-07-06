@@ -1,13 +1,13 @@
 
 /* disabling web scroll (codegrepper.com) */
-/* html, body {
+html, body {
     margin: 0;
     height: 100%;
     overflow: hidden;
 }
  .noscroll{
     overflow: hidden;
- } */
+ }
 
  /*template from dev.to memory game */
 
@@ -26,7 +26,7 @@
     } 
     
     .grid img.flip { 
-    transform: rotateY(180deg); 
+    transform: rotateY(360deg); 
     } 
     
     .popup { 
