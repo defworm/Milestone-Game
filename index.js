@@ -15,46 +15,46 @@ const c5 = character5 (250, 170)
  
 const cardArray = [ 
     
-    { name: "skull", img: "./assets/skull.jpg", },
-    { name: "skull", img: "./assets/skull.jpg", },
-    { name: "skull", img: "./assets/skull.jpg", },
-    { name: "skull", img: "./assets/skull.jpg", },
-    { name: "skull", img: "./assets/skull.jpg", },
-    { name: "skull", img: "./assets/skull.jpg", },
-    { name: "skull", img: "./assets/skull.jpg", },
-    { name: "skull", img: "./assets/skull.jpg", },
-    { name: "skull", img: "./assets/skull.jpg", },
-    { name: "skull", img: "./assets/skull.jpg", },
-    { name: "skull", img: "./assets/skull.jpg", },
-    { name: "skull", img: "./assets/skull.jpg", },
-    { name: "skull", img: "./assets/skull.jpg", },
-    { name: "skull", img: "./assets/skull.jpg", },
-    { name: "skull", img: "./assets/skull.jpg", },
-    { name: "skull", img: "./assets/skull.jpg", },
-    { name: "skull", img: "./assets/skull.jpg", },
-    { name: "skull", img: "./assets/skull.jpg", },
-    { name: "skull", img: "./assets/skull.jpg", },
-    { name: "skull", img: "./assets/skull.jpg", },
-    { name: "skull", img: "./assets/skull.jpg", }, 
-    { name: "skull", img: "./assets/skull.jpg", },
-    { name: "plusOne", img: "./assets/plusOne.png", },
-    { name: "plusOne", img: "./assets/plusOne.png", }, 
-    { name: "plusOne", img: "./assets/plusOne.png", },
-    { name: "plusOne", img: "./assets/plusOne.png", },
-    { name: "plusOne", img: "./assets/plusOne.png", }, 
-    { name: "plusOne", img: "./assets/plusOne.png", },
-    { name: "plusOne", img: "./assets/plusOne.png", },
-    { name: "plusOne", img: "./assets/plusOne.png", }, 
-    { name: "plusOne", img: "./assets/plusOne.png", },
-    { name: "plusOne", img: "./assets/plusOne.png", },
-    { name: "plusOne", img: "./assets/plusOne.png", },
-    { name: "plusOne", img: "./assets/plusOne.png", },
-    { name: "plusOne", img: "./assets/plusOne.png", },
-    { name: "plusOne", img: "./assets/plusOne.png", },
-    { name: "plusOne", img: "./assets/plusOne.png", },
-    { name: "plusOne", img: "./assets/plusOne.png", },
-    { name: "plusOne", img: "./assets/plusOne.png", },
-    { name: "plusOne", img: "./assets/plusOne.png", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", }, 
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "plusOne", img: "./Assets/plusOne.png", },
+    { name: "plusOne", img: "./Assets/plusOne.png", }, 
+    { name: "plusOne", img: "./Assets/plusOne.png", },
+    { name: "plusOne", img: "./Assets/plusOne.png", },
+    { name: "plusOne", img: "./Assets/plusOne.png", }, 
+    { name: "plusOne", img: "./Assets/plusOne.png", },
+    { name: "plusOne", img: "./Assets/plusOne.png", },
+    { name: "plusOne", img: "./Assets/plusOne.png", }, 
+    { name: "plusOne", img: "./Assets/plusOne.png", },
+    { name: "plusOne", img: "./Assets/plusOne.png", },
+    { name: "plusOne", img: "./Assets/plusOne.png", },
+    { name: "plusOne", img: "./Assets/plusOne.png", },
+    { name: "plusOne", img: "./Assets/plusOne.png", },
+    { name: "plusOne", img: "./Assets/plusOne.png", },
+    { name: "plusOne", img: "./Assets/plusOne.png", },
+    { name: "plusOne", img: "./Assets/plusOne.png", },
+    { name: "plusOne", img: "./Assets/plusOne.png", },
+    { name: "plusOne", img: "./Assets/plusOne.png", },
     
     ]; 
     
@@ -92,7 +92,7 @@ const cardArray = [
     popup.style.display = "none"; 
     array.forEach((arr, index) => { 
     let img = document.createElement("img"); 
-    img.setAttribute("src", "./assets/strawberry.gif");
+    img.setAttribute("src", "./Assets/strawberry.gif");
     img.setAttribute("data-id", index); 
     grid.appendChild(img); 
     })
@@ -152,8 +152,8 @@ const cardArray = [
     scoreBoard.innerHTML = cardsWon; 
     setTimeout(checkWon,500) 
     } else { 
-    imgs[firstCard].setAttribute("src", "assets/strawberry.gif");
-    imgs[secondCard].setAttribute("src", "assets/strawberry.gif"); 
+    imgs[firstCard].setAttribute("src", "Assets/strawberry.gif");
+    imgs[secondCard].setAttribute("src", "Assets/strawberry.gif"); 
     swal({
       title: "Close!", 
       text: "Try Again!", 
