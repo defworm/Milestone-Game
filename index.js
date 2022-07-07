@@ -13,7 +13,7 @@ const c5 = character5 (250, 170)
 // template from dev.to memory game//
 
  
-let cardArray = [ 
+const cardArray = [ 
     
     { name: "skull", img: "assets/skull.jpg", },
     { name: "skull", img: "assets/skull.jpg", },
