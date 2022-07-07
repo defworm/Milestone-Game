@@ -1,12 +1,12 @@
-const mc = mainCharacter(100, 110)
+const mc = mainCharacter(500, 110)
 
-const c2 = character2 (100, 110)
+const c2 = character2 (470, 110)
 
-const c3 = character3 (120, 90)
+const c3 = character3 (420, 210)
 
-const c4 = character4 (20, 150)
+const c4 = character4 (340, 150)
 
-const c5 = character5 (60, 70)
+const c5 = character5 (250, 170)
 
 // const berries = berries (200, 150)
 
@@ -37,12 +37,12 @@ let cardArray = [
     { name: "skull", img: "assets/skull.jpg", },
     { name: "skull", img: "assets/skull.jpg", }, 
     { name: "skull", img: "assets/skull.jpg", },
-    { name: "skull", img: "assets/skull.jpg", },
-    { name: "skull", img: "assets/skull.jpg", },
-    { name: "skull", img: "assets/skull.jpg", },
-    { name: "skull", img: "assets/skull.jpg", },
-    { name: "skull", img: "assets/skull.jpg", },
-    { name: "skull", img: "assets/skull.jpg", },
+    { name: "plusOne", img: "assets/plusOne.png", },
+    { name: "plusOne", img: "assets/plusOne.png", }, 
+    { name: "plusOne", img: "assets/plusOne.png", },
+    { name: "plusOne", img: "assets/plusOne.png", },
+    { name: "plusOne", img: "assets/plusOne.png", }, 
+    { name: "plusOne", img: "assets/plusOne.png", },
     { name: "plusOne", img: "assets/plusOne.png", },
     { name: "plusOne", img: "assets/plusOne.png", }, 
     { name: "plusOne", img: "assets/plusOne.png", },
@@ -61,8 +61,8 @@ let cardArray = [
     //define variables and get DOM element
     
     let grid = document.querySelector(".grid");
-    let audio = document.querySelector("audio")
-    let source = document.querySelector("#source")
+    // let audio = document.querySelector("audio")
+    // let source = document.querySelector("#source")
     let scoreBoard = document.querySelector(".scoreBoard"); 
     let popup = document.querySelector(".popup"); 
     let playAgain = document.querySelector(".playAgain"); 
@@ -139,7 +139,12 @@ let cardArray = [
     let firstCard = cardsId[0];
     let secondCard = cardsId[1];
     if (cardsSelected[0] === cardsSelected[1] && firstCard !== secondCard) { 
-    alert("you have found a match"); 
+    swal({
+      title: "Match!", 
+      text: "You Gain A Friend!", 
+      icon: "success",
+      button: "I'm Going To Win This",
+    }); 
      // source.src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/success.mp3"
       //this below is used if you want to add sounds, you can comment it out if you dont want it
      
@@ -148,10 +153,16 @@ let cardArray = [
     setTimeout(checkWon,500) 
     } else { 
     imgs[firstCard].setAttribute("src", "assets/strawberry.gif");
-    imgs[secondCard].setAttribute("src", "assets/strawberry.gif"); alert("wrong, please try again"); 
-      source.src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/error.mp3"
-      audio.load()
-      audio.play()
+    imgs[secondCard].setAttribute("src", "assets/strawberry.gif"); 
+    swal({
+      title: "Close!", 
+      text: "Try Again!", 
+      icon: "error",
+      button: "I Will!",
+    }); 
+      // source.src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/error.mp3"
+      // audio.load()
+      // audio.play()
       imgs[firstCard].classList.remove("flip"); imgs[secondCard].classList.remove("flip"); 
     } 
     cardsSelected = []; 
@@ -162,7 +173,11 @@ let cardArray = [
     
     function checkWon() {
     if (cardsWon == cardArray.length / 2) {
-    alert("You won") 
+    swal({
+      title: "Congratulations!",
+      text: "You Won!",
+      button: "Play Again?",
+    }); 
     setTimeout(()=> popup.style.display = "flex" ,300); 
     }
     }
