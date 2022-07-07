@@ -36,25 +36,21 @@
 4. Make characters images moveable w/ keystrokes
 5. Be able to add a character to your party by: 
    a) landing on berries 
-   b) clicking them
-   c) correctly answering a riddle 
+   b) clicking two berries revealing two stars
 6. Create pitfalls that cause you to lose a party member by:
    a) landing on berries
-   b) clicking them
-   c) incorrectly answering a riddle
+   b) clicking two berries and revealing to skulls
 7. Win the game by:
-   a) landing on the last berry
-   b) while having five party members
-   c) correctly answering the last riddle
+   a) Having five total party members
 8. Create a single-use passcode that generates when won
 9. Create a website that allows you to enter your single-use passcode and be memorialized as a winner for life!
 
 ### User Story
 As a User, I want to: (Objective)
 1. Travel the map
-2. Find and collect members to add to my party. This is done by correctly answering the riddle.
+2. Find and collect members to add to my party. This is done by matching two stars
 3. Avoid pitfalls that will cause me to lose members of my party
-4. Collect five members and make it to the endpoint to win
+4. Collect five members to win
 
 What I see:
 1. A traversable map

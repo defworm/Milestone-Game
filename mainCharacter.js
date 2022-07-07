@@ -1,5 +1,5 @@
 function mainCharacter(x, y){
-    const element = newImage('Assets/Maincharacter.gif')
+    const element = newImage('Assets/mainCharacter.gif')
     element.style.zIndex = 1;
 
     function handleDirectionChange(direction) {
