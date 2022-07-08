@@ -1,4 +1,4 @@
-const mc = mainCharacter(500, 110)
+const mc = mainCharacter (500, 110)
 
 const c2 = character2 (470, 110)
 
@@ -11,6 +11,7 @@ const c5 = character5 (250, 170)
 
 
 // template from dev.to memory game//
+// sounds from dreamstime.com//
 
  
 const cardArray = [ 
@@ -61,8 +62,6 @@ const cardArray = [
     //define variables and get DOM element
     
     let grid = document.querySelector(".grid");
-    // let audio = document.querySelector("audio")
-    // let source = document.querySelector("#source")
     let scoreBoard = document.querySelector(".scoreBoard"); 
     let popup = document.querySelector(".popup"); 
     let playAgain = document.querySelector(".playAgain"); 
@@ -107,24 +106,11 @@ const cardArray = [
     // flip Card function
     
     function flipCard() { 
+      const plusOne = new Audio ("./Assets/ding.mp3")
+      const skull = new Audio ("./Assets/skullnoise.mp3")
     let selected = this.dataset.id;
       let clicked =cardArray[selected].name
     cardsSelected.push(clicked); 
-
-    
-      
-    //    source.src=`${clicked}.mp3`
-    //   audio.load()
-    //   audio.play()
-      //this is the second method to play a sound
-      
-    //    let clicked =cardArray[selected].name
-    // cardsSelected.push(clicked); 
-    // let sound =new Audio(`./${clicked}.mp3`) 
-    // function playSound(sound){
-    // sound.play()
-    // }
-    // playSound(sound)
       
       
     cardsId.push(selected); 
@@ -133,6 +119,12 @@ const cardArray = [
     if (cardsId.length === 2) { 
     setTimeout(checkForMatch, 500);
     } 
+    if (cardArray[selected].name === "plusOne"){
+      plusOne.play();
+    }
+    if (cardArray[selected].name === "skull"){
+      skull.play();
+    }
     }
     // checkForMatch function
     
@@ -146,6 +138,7 @@ const cardArray = [
       text: "You Gain A Friend!", 
       icon: "success",
       button: "I'm Going To Win This",
+      
     }); 
      // source.src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/success.mp3"
       //this below is used if you want to add sounds, you can comment it out if you dont want it
