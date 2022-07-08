@@ -8,7 +8,7 @@ const c4 = character4 (340, 150)
 
 const c5 = character5 (250, 170)
 
-// const berries = berries (200, 150)
+
 
 // template from dev.to memory game//
 
@@ -110,6 +110,8 @@ const cardArray = [
     let selected = this.dataset.id;
       let clicked =cardArray[selected].name
     cardsSelected.push(clicked); 
+
+    
       
     //    source.src=`${clicked}.mp3`
     //   audio.load()
@@ -154,12 +156,12 @@ const cardArray = [
     } else { 
     imgs[firstCard].setAttribute("src", "Assets/strawberry.gif");
     imgs[secondCard].setAttribute("src", "Assets/strawberry.gif"); 
-    swal({
-      title: "Close!", 
-      text: "Try Again!", 
-      icon: "error",
-      button: "I Will!",
-    }); 
+    // swal({
+    //   title: "Close!", 
+    //   text: "Try Again!", 
+    //   icon: "error",
+    //   button: "I Will!",
+    // }); 
       // source.src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/error.mp3"
       // audio.load()
       // audio.play()

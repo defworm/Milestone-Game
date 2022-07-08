@@ -1,5 +1,5 @@
 function mainCharacter(x, y){
-    const element = newImage('Assets/mainCharacter.gif')
+    const element = image('Assets/mainCharacter.gif')
     element.style.zIndex = 1;
 
     function handleDirectionChange(direction) {
@@ -30,7 +30,7 @@ function mainCharacter(x, y){
 }
 
 function character2(x, y){
-    const element = newImage('Assets/character2.gif')
+    const element = image('Assets/character2.gif')
     element.style.zIndex = 1;
 
     function handleDirectionChange(direction) {
@@ -62,7 +62,7 @@ function character2(x, y){
 
 // goofed my up and down in saved file, have to correct//
 function character3(x, y){
-    const element = newImage('Assets/character3.gif')
+    const element = image('Assets/character3.gif')
     element.style.zIndex = 1;
 
     function handleDirectionChange(direction) {
@@ -93,7 +93,7 @@ function character3(x, y){
 }
 
 function character4(x, y){
-    const element = newImage('Assets/character4.gif')
+    const element = image('Assets/character4.gif')
     element.style.zIndex = 1;
 
     function handleDirectionChange(direction) {
@@ -124,7 +124,7 @@ function character4(x, y){
 }
 
 function character5(x, y){
-    const element = newImage('Assets/character5.gif')
+    const element = image('Assets/character5.gif')
     element.style.zIndex = 1;
 
     function handleDirectionChange(direction) {

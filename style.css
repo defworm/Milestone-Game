@@ -28,6 +28,10 @@ html, body {
     .grid img.flip { 
     transform: rotateY(360deg); 
     } 
+
+    .selected {
+        border: 4px solid blue;
+    }
     
     /* .popup { 
     background: red; 
