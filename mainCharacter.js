@@ -1,3 +1,5 @@
+// arrow key moves derived from in class activity // 
+
 function mainCharacter(x, y){
     const element = image('Assets/mainCharacter.gif')
     element.style.zIndex = 1;

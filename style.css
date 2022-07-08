@@ -23,6 +23,7 @@ html, body {
     margin: 1px; 
     transform-style: preserve-3d; 
     transition: transform 0.5s; 
+    padding: auto;
     } 
     
     .grid img.flip { 

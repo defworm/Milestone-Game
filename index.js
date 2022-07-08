@@ -58,6 +58,22 @@ const cardArray = [
     { name: "plusOne", img: "./Assets/plusOne.png", },
     
     ]; 
+
+// const cardArray = [
+//   { name: "plusOne", img: "./Assets/plusOne.png",},
+//   { name: "skull", img: "./Assets/skull.jpg", }, 
+// ];
+
+// const fillArray = (name, len) => {
+//   const arr = [];
+//   for (let i = 0; i < len; i++) {
+//     arr.push(name);
+//   }
+//   return arr;
+// }
+
+// const arr = Array(16).fill("plusOne")
+// console.log(arr)
     
     //define variables and get DOM element
     
@@ -140,8 +156,7 @@ const cardArray = [
       button: "I'm Going To Win This",
       
     }); 
-     // source.src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/success.mp3"
-      //this below is used if you want to add sounds, you can comment it out if you dont want it
+     
      
     cardsWon += 1; 
     scoreBoard.innerHTML = cardsWon; 
@@ -155,9 +170,7 @@ const cardArray = [
     //   icon: "error",
     //   button: "I Will!",
     // }); 
-      // source.src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/error.mp3"
-      // audio.load()
-      // audio.play()
+     
       imgs[firstCard].classList.remove("flip"); imgs[secondCard].classList.remove("flip"); 
     } 
     cardsSelected = []; 
@@ -188,4 +201,58 @@ const cardArray = [
     scoreBoard.innerHTML = 0; 
     popup.style.display = "none"; 
     }
+
+    //2d collision detection circle: developer.mozilla//
+
+    const Crafty= img
     
+    Crafty.init(200, 200);
+
+    var dim1 = {x: 5, y: 5}
+    var dim2 = {x: 20, y: 20}
+    
+    Crafty.c("Circle", {
+       circle: function(radius, color) {
+            this.radius = radius;
+            this.w = this.h = radius * 2;
+            this.color = color || "#000000";
+    
+            this.bind("Move", Crafty.DrawManager.drawAll)
+            return this;
+       },
+    
+       draw: function() {
+           var ctx = Crafty.canvas.context;
+           ctx.save();
+           ctx.fillStyle = this.color;
+           ctx.beginPath();
+           ctx.arc(
+               this.x + this.radius,
+               this.y + this.radius,
+               this.radius,
+               0,
+               Math.PI * 2
+           );
+           ctx.closePath();
+           ctx.fill();
+           ctx.restore();
+        }
+    });
+    
+    var circle1 = Crafty.e("2D, Canvas, Circle").attr(dim1).circle(15, "red");
+    
+    var circle2 = Crafty.e("2D, Canvas, Circle, Fourway").fourway(2).attr(dim2).circle(20, "blue");
+    
+    circle2.bind("EnterFrame", function () {
+        var dx = (circle1.x + circle1.radius) - (circle2.x + circle2.radius);
+        var dy = (circle1.y + circle1.radius) - (circle2.y + circle2.radius);
+        var distance = Math.sqrt(dx * dx + dy * dy);
+    
+        if (distance < circle1.radius + circle2.radius) {
+            // collision detected!
+            this.color = "green";
+        } else {
+            // no collision
+            this.color = "blue";
+        }
+    });
