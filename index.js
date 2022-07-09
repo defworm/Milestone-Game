@@ -24,27 +24,27 @@ const c5 = character5 (550, 470)
 const cardArray = [ 
     
     { name: "skull", img: "./Assets/skull.jpg", },
-    { name: "skull1", img: "./Assets/skull.jpg", },
-    { name: "skull2", img: "./Assets/skull.jpg", },
-    { name: "skull3", img: "./Assets/skull.jpg", },
-    { name: "skull4", img: "./Assets/skull.jpg", },
-    { name: "skull5", img: "./Assets/skull.jpg", },
-    { name: "skull6", img: "./Assets/skull.jpg", },
-    { name: "skull7", img: "./Assets/skull.jpg", },
-    { name: "skull8", img: "./Assets/skull.jpg", },
-    { name: "skull9", img: "./Assets/skull.jpg", },
-    { name: "skull10", img: "./Assets/skull.jpg", },
-    { name: "skull11", img: "./Assets/skull.jpg", },
-    { name: "skull12", img: "./Assets/skull.jpg", },
-    { name: "skull13", img: "./Assets/skull.jpg", },
-    { name: "skull14", img: "./Assets/skull.jpg", },
-    { name: "skull15", img: "./Assets/skull.jpg", },
-    { name: "skull16", img: "./Assets/skull.jpg", },
-    { name: "skull17", img: "./Assets/skull.jpg", },
-    { name: "skull18", img: "./Assets/skull.jpg", },
-    { name: "skull19", img: "./Assets/skull.jpg", },
-    { name: "skull20", img: "./Assets/skull.jpg", }, 
-    { name: "skull21", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull", img: "./Assets/skull.jpg", }, 
+    { name: "skull", img: "./Assets/skull.jpg", },
     { name: "plusOne", img: "./Assets/plusOne.png", },
     { name: "plusOne", img: "./Assets/plusOne.png", }, 
     { name: "plusOne", img: "./Assets/plusOne.png", },
@@ -169,6 +169,7 @@ const cardArray = [
     cardsWon += 1; 
     scoreBoard.innerHTML = cardsWon; 
     setTimeout(checkWon,500) 
+    
     } else { 
     imgs[firstCard].setAttribute("src", "Assets/strawberry.gif");
     imgs[secondCard].setAttribute("src", "Assets/strawberry.gif"); 
@@ -206,6 +207,8 @@ const cardArray = [
       }
 
     }}
+
+    setTimeout(checkLose,500)
     
     function checkLose() {
       if (clicks === 15){
