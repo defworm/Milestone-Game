@@ -39,7 +39,7 @@
    b) clicking two berries revealing two stars
 6. Create pitfalls that cause you to lose a party member by:
    a) landing on berries
-   b) clicking two berries and revealing to skulls
+   b) clicking two berries and revealing two skulls
 7. Win the game by:
    a) Having five total party members
 8. Create a single-use passcode that generates when won

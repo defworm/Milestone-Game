@@ -1,12 +1,19 @@
-const mc = mainCharacter (500, 110)
+// const { default: swal } = require("sweetalert")
 
-const c2 = character2 (470, 110)
+const mc = mainCharacter (100, 420)
 
-const c3 = character3 (420, 210)
+const c2 = character2 (280, 470)
 
-const c4 = character4 (340, 150)
+const c3 = character3 (350, 480)
 
-const c5 = character5 (250, 170)
+const c4 = character4 (440, 450)
+
+const c5 = character5 (550, 470)
+
+// Image[] D = new Image [] {
+//   new Image("./Assets/one.jpg"),
+//   new Image("./Assets/two.jpg"),
+// }
 
 
 
@@ -17,27 +24,27 @@ const c5 = character5 (250, 170)
 const cardArray = [ 
     
     { name: "skull", img: "./Assets/skull.jpg", },
-    { name: "skull", img: "./Assets/skull.jpg", },
-    { name: "skull", img: "./Assets/skull.jpg", },
-    { name: "skull", img: "./Assets/skull.jpg", },
-    { name: "skull", img: "./Assets/skull.jpg", },
-    { name: "skull", img: "./Assets/skull.jpg", },
-    { name: "skull", img: "./Assets/skull.jpg", },
-    { name: "skull", img: "./Assets/skull.jpg", },
-    { name: "skull", img: "./Assets/skull.jpg", },
-    { name: "skull", img: "./Assets/skull.jpg", },
-    { name: "skull", img: "./Assets/skull.jpg", },
-    { name: "skull", img: "./Assets/skull.jpg", },
-    { name: "skull", img: "./Assets/skull.jpg", },
-    { name: "skull", img: "./Assets/skull.jpg", },
-    { name: "skull", img: "./Assets/skull.jpg", },
-    { name: "skull", img: "./Assets/skull.jpg", },
-    { name: "skull", img: "./Assets/skull.jpg", },
-    { name: "skull", img: "./Assets/skull.jpg", },
-    { name: "skull", img: "./Assets/skull.jpg", },
-    { name: "skull", img: "./Assets/skull.jpg", },
-    { name: "skull", img: "./Assets/skull.jpg", }, 
-    { name: "skull", img: "./Assets/skull.jpg", },
+    { name: "skull1", img: "./Assets/skull.jpg", },
+    { name: "skull2", img: "./Assets/skull.jpg", },
+    { name: "skull3", img: "./Assets/skull.jpg", },
+    { name: "skull4", img: "./Assets/skull.jpg", },
+    { name: "skull5", img: "./Assets/skull.jpg", },
+    { name: "skull6", img: "./Assets/skull.jpg", },
+    { name: "skull7", img: "./Assets/skull.jpg", },
+    { name: "skull8", img: "./Assets/skull.jpg", },
+    { name: "skull9", img: "./Assets/skull.jpg", },
+    { name: "skull10", img: "./Assets/skull.jpg", },
+    { name: "skull11", img: "./Assets/skull.jpg", },
+    { name: "skull12", img: "./Assets/skull.jpg", },
+    { name: "skull13", img: "./Assets/skull.jpg", },
+    { name: "skull14", img: "./Assets/skull.jpg", },
+    { name: "skull15", img: "./Assets/skull.jpg", },
+    { name: "skull16", img: "./Assets/skull.jpg", },
+    { name: "skull17", img: "./Assets/skull.jpg", },
+    { name: "skull18", img: "./Assets/skull.jpg", },
+    { name: "skull19", img: "./Assets/skull.jpg", },
+    { name: "skull20", img: "./Assets/skull.jpg", }, 
+    { name: "skull21", img: "./Assets/skull.jpg", },
     { name: "plusOne", img: "./Assets/plusOne.png", },
     { name: "plusOne", img: "./Assets/plusOne.png", }, 
     { name: "plusOne", img: "./Assets/plusOne.png", },
@@ -58,7 +65,7 @@ const cardArray = [
     { name: "plusOne", img: "./Assets/plusOne.png", },
     
     ]; 
-
+//trying to simplify array here//
 // const cardArray = [
 //   { name: "plusOne", img: "./Assets/plusOne.png",},
 //   { name: "skull", img: "./Assets/skull.jpg", }, 
@@ -85,7 +92,7 @@ const cardArray = [
     let imgs; 
     let cardsId = []; 
     let cardsSelected = []; 
-    let cardsWon = 0; 
+    let cardsWon= 0; 
     let clicks = 0;
     document.addEventListener("DOMContentLoaded", function () {
     //define functions 
@@ -178,13 +185,47 @@ const cardArray = [
     clicks += 1; 
     clickBoard.innerHTML = clicks; 
     }
+
+   function showWords(){
+    if (cardsWon == 5){
+      console.log("You have all of the friends!");
+      if (cardsWon == 4){
+        console.log("You have four friends!");
+        if (cardsWon == 3){
+          console.log ("You have three friends!");
+          if (cardsWon == 2){
+            console.log ("you have two friends!");
+            if (cardsWon == 1){
+              console.log ("You have one friend!");
+            } else {
+              console.log ("You have no friends");
+            }
+          }
+        }
+      }
+
+    }}
+    
+    function checkLose() {
+      if (clicks === 15){
+        swal({
+          title: "Dang",
+          text: "You Lose",
+        });
+      }
+    }
+
+// original cardsWon formula instead of 5//
+    // cardArray.length / 2
     
     function checkWon() {
-    if (cardsWon == cardArray.length / 2) {
+     
+      
+    if (cardsWon == 5) {
     swal({
       title: "Congratulations!",
       text: "You Won!",
-      button: "Play Again?",
+      // button: "Play Again?",
     }); 
     setTimeout(()=> popup.style.display = "flex" ,300); 
     }
@@ -204,55 +245,55 @@ const cardArray = [
 
     //2d collision detection circle: developer.mozilla//
 
-    const Crafty= img
+    // const Crafty= img
     
-    Crafty.init(200, 200);
+    // Crafty.init(200, 200);
 
-    var dim1 = {x: 5, y: 5}
-    var dim2 = {x: 20, y: 20}
+    // var dim1 = {x: 5, y: 5}
+    // var dim2 = {x: 20, y: 20}
     
-    Crafty.c("Circle", {
-       circle: function(radius, color) {
-            this.radius = radius;
-            this.w = this.h = radius * 2;
-            this.color = color || "#000000";
+    // Crafty.c("Circle", {
+    //    circle: function(radius, color) {
+    //         this.radius = radius;
+    //         this.w = this.h = radius * 2;
+    //         this.color = color || "#000000";
     
-            this.bind("Move", Crafty.DrawManager.drawAll)
-            return this;
-       },
+    //         this.bind("Move", Crafty.DrawManager.drawAll)
+    //         return this;
+    //    },
     
-       draw: function() {
-           var ctx = Crafty.canvas.context;
-           ctx.save();
-           ctx.fillStyle = this.color;
-           ctx.beginPath();
-           ctx.arc(
-               this.x + this.radius,
-               this.y + this.radius,
-               this.radius,
-               0,
-               Math.PI * 2
-           );
-           ctx.closePath();
-           ctx.fill();
-           ctx.restore();
-        }
-    });
+    //    draw: function() {
+    //        var ctx = Crafty.canvas.context;
+    //        ctx.save();
+    //        ctx.fillStyle = this.color;
+    //        ctx.beginPath();
+    //        ctx.arc(
+    //            this.x + this.radius,
+    //            this.y + this.radius,
+    //            this.radius,
+    //            0,
+    //            Math.PI * 2
+    //        );
+    //        ctx.closePath();
+    //        ctx.fill();
+    //        ctx.restore();
+    //     }
+    // });
     
-    var circle1 = Crafty.e("2D, Canvas, Circle").attr(dim1).circle(15, "red");
+    // var circle1 = Crafty.e("2D, Canvas, Circle").attr(dim1).circle(15, "red");
     
-    var circle2 = Crafty.e("2D, Canvas, Circle, Fourway").fourway(2).attr(dim2).circle(20, "blue");
+    // var circle2 = Crafty.e("2D, Canvas, Circle, Fourway").fourway(2).attr(dim2).circle(20, "blue");
     
-    circle2.bind("EnterFrame", function () {
-        var dx = (circle1.x + circle1.radius) - (circle2.x + circle2.radius);
-        var dy = (circle1.y + circle1.radius) - (circle2.y + circle2.radius);
-        var distance = Math.sqrt(dx * dx + dy * dy);
+    // circle2.bind("EnterFrame", function () {
+    //     var dx = (circle1.x + circle1.radius) - (circle2.x + circle2.radius);
+    //     var dy = (circle1.y + circle1.radius) - (circle2.y + circle2.radius);
+    //     var distance = Math.sqrt(dx * dx + dy * dy);
     
-        if (distance < circle1.radius + circle2.radius) {
-            // collision detected!
-            this.color = "green";
-        } else {
-            // no collision
-            this.color = "blue";
-        }
-    });
+    //     if (distance < circle1.radius + circle2.radius) {
+    //         // collision detected!
+    //         this.color = "green";
+    //     } else {
+    //         // no collision
+    //         this.color = "blue";
+    //     }
+    // });
