@@ -1,3 +1,5 @@
+// Not currently working w/ character movements//
+
 // arrow key moves derived from in class activity // 
 
 function mainCharacter(x, y){

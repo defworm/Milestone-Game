@@ -10,6 +10,7 @@ const c4 = character4 (440, 450)
 
 const c5 = character5 (550, 470)
 
+// Trial images//
 // Image[] D = new Image [] {
 //   new Image("./Assets/one.jpg"),
 //   new Image("./Assets/two.jpg"),
@@ -65,7 +66,7 @@ const cardArray = [
     { name: "plusOne", img: "./Assets/plusOne.png", },
     
     ]; 
-//trying to simplify array here//
+//trying to simplify array here, not working//
 // const cardArray = [
 //   { name: "plusOne", img: "./Assets/plusOne.png",},
 //   { name: "skull", img: "./Assets/skull.jpg", }, 
@@ -187,7 +188,7 @@ const cardArray = [
     clicks += 1; 
     clickBoard.innerHTML = clicks; 
     }
-
+// Have to call showWords for this to run//
    function showWords(){
     if (cardsWon == 5){
       console.log("You have all of the friends!");
@@ -207,7 +208,7 @@ const cardArray = [
       }
 
     }}
-
+//Trying to make it so if you have 15 attempts before five matchs, you lose//
     setTimeout(checkLose,500)
     
     function checkLose() {

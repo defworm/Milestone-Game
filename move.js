@@ -1,3 +1,5 @@
+// Not currently using moves, focused on matching images and score decrement//
+
 function move(element) {
     element.style.position = 'fixed'
 
