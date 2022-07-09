@@ -231,6 +231,8 @@ const cardArray = [
       title: "Congratulations!",
       text: "You Won!",
       // button: "Play Again?",
+//I want this button to be my popup play again instead of the separate box//
+
     }); 
     setTimeout(()=> popup.style.display = "flex" ,300); 
     }

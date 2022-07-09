@@ -1,4 +1,6 @@
-// Not currently using moves, focused on matching images and score decrement//
+// Not currently using moves, focused on matching images and score decrement of match game//
+
+// Moves derived from in-class activity//
 
 function move(element) {
     element.style.position = 'fixed'

@@ -55,18 +55,20 @@ html, body {
     display: flex; 
     justify-content: space-between; 
     padding: 15px 30px; 
-    font-size: 23px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px; 
     } 
     
     .data span { 
     color: rgb(78, 14, 14);
-    font-size: 30px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px; 
     }
 
     body {
         background-image: url("Assets/Background.png");
     }
-
+ /* tried to make a score bar like five stars rating sytle, added image for trial */
     /* span.stars, span.stars span {
         display: block;
         background: url("./Assets/smiling-strawberry.gif") 0 -16px repeat-x;
